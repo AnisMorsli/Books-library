@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gentium Plus', serif;
+
+}
+body{
+    width: 100% ;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #EDF0EF;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41403C;
+    box-shadow: 0 20px 150px rgba(0, 0, 0, 0.6);
+}
+nav{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    justify-content: space-between;
+}
+.links{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.log{
+    margin-right: 50px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logged{
+    margin-right: 50px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_login{
+    visibility: visible
+}
+.style_a{
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: #CF8855;
+    font-weight: 700;
+}
+.style_a:hover{
+    width: 130px;
+    height: 35px;
+    border:solid 1px #CF8855;
+    border-radius: 7px;
+}
+.log_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#EDEFEE;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #AB2110;
+    width: 120px;
+    height: 35px;
+    border-radius: 7px;
+    font-weight: 400;
+}
+.log_btn:hover{
+    background-color: #FA6166;
+    border: #333333 solid 1px;
+    color: #333333;
+}
+main{
+    margin-top: 40px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    height: 100vh;
+    }
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #41403C;
+    box-shadow: 0 20px 150px rgba(0, 0, 0, 0.6);
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    background-image: url(./img/reading-book-1200x628-facebook-1200x628.jpg);
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn_get_started{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    text-decoration: none;
+    opacity: 0.7;
+    margin-bottom: 100px;
+    background-color:#41403C;
+    color: #CF8855;
+    font-size: 25px;
+    font-weight: 600;
+}
+.btn_get_started:hover{
+    background-color: #AB2110;
+    color: #41403C;
+}
+.sub_container{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub_container_h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.bot_main_container{
+    display: flex;
+    width: 60%;
+
+}
+.bot_fist_sub_container{
+    width: 70%;
+}
+.about_us_text{
+    width: 80%;
+    
+}
+.bot_second_sub_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.container_social{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50%;
+}
+.social_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#EDEFEE;
+    background-color: #AB2110;
+    border-radius: 7px;
+    width: 200px;
+    height: 35px;
+
+}
+.social_link:hover{
+    background-color: #FA6166;
+    border: #333333 solid 1px;
+    color: #333333;
+
+}
+.img_social{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.text_color{
+    color: #EDEFEE;
+}
+.text_color_titel{
+    color: #41403C;
+}
+.W_user_btn{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    text-decoration: none;
+    color: #EDEFEE;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #AB2110;
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+}
+.W_user_img{
+    height: 20px;
+    width: 20px;
+}

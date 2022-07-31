@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&display=swap" rel="stylesheet">
+    <title>open source library</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <a class="style_a" href="/">Home</a>
+                <a class="style_a" href="bookslist">List of books</a>
+                <a class="style_a" href="addbook">Add book</a>
+            </div>
+            <div class="log">   
+                <a class="style_a" href="login">Log in</a>
+                <a class="log_btn" href="register">Sign up</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container_log">
+            <div class="container_text">
+                <h1>
+                    Log in 
+                </h1>
+            </div>
+            <div class="container_register">
+                <form id="form">
+                <h3>Email :</h3>
+                <input class="input_box" type="email" required name="email" id="email" >
+                <h3>Password :</h3>
+                <input class="input_box" type="password" required name="pass" id="pass">
+                <div class="div_register">
+                    <input class="btn_register" type="submit" value="Log in">
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bot_main_container">
+            <div class="bot_fist_sub_container">
+                <h1 class="text_color">About us :</h1>
+                <p class="about_us_text">
+                    <span class="about_us_text_span text_color">
+                    Having great thinks to your self is not the nice move to do, and so we decided to create a new platform that can provide for people the right education that they want in oder to achieve the learning curve in witch they can sustain a certain skill to improve in there job or start from scratch in any field,
+                    for a better world every one of us should have to learn for free what he want to do in life, no matter where you live or how you live you just need a pc, a phone, anythink that can provide you with internet access. <br>
+                    Many great minds out there not having the opornity to devlope there skills in oder to achieve great things, and for that i want to give you every things in your hands to be better in life, one time a really super nice guys said : "Learning never exhausts the mind". <br>
+                    Happy learning every one hope we change the world in a better way maybe not for us but for future generation.</span>
+                </p>
+            </div>
+            <div class="bot_second_sub_container">
+                <h1 class="text_color">Our social Media :</h1>
+                <div class="container_social">
+                    <a class="social_link" href=""><img class="img_social" src="./img/facebook.png" alt="facebook"> Facebook</a>
+                    <a class="social_link" href=""><img class="img_social" src="./img/twitter.png" alt="twitter"> Twitter</a>
+                    <a class="social_link" href=""><img class="img_social" src="./img/instagram.png" alt="instagram">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="login.js"></script>
+</html>

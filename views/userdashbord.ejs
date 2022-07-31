@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../maincss.css">
+    <link rel="stylesheet" href="../userslider.css">
+    <link rel="stylesheet" href="../user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&display=swap" rel="stylesheet">
+    <title>open source library</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <a class="style_a" href="/">Home</a>
+                <a class="style_a" href="/bookslist">List of books</a>
+                <a class="style_a" href="/addbook">Add book</a>
+            </div>
+            <% if(user == false){ %>
+            <div class="log">   
+                <a class="style_a btn_login" href="login">Log in</a>
+                <a class="log_btn" href="register">Sign up</a>
+            </div>
+                <%  }else {  %>
+                    <div class="logged">
+                    <div class="navigation">
+                        <div class="userBx">
+                            <div class="imgBx">
+                                <img src="../img/user.png" alt="user">
+                            </div>
+                            <p class="username"><%=user.username%></p>
+                        </div>
+                        <div class="menuToggle"></div>
+                        <ul class="menu">
+                            <li><a href="/userdashbord/<%=user.id%>"><ion-icon name="person"></ion-icon> MY DASHBOARD</a></li>
+                            <li><a href=""><ion-icon name="help"></ion-icon> HELP & SSUPPORT</a></li>
+                            <li><form id="logout_form" action="/logout" method="post"><button id="logout_btn">  <ion-icon name="log-out"></ion-icon> LOGOUT</button></form></li>
+                        </ul>
+                    </div>
+                </div>
+                <% } %>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="main_container_user">
+                <div class="pic_box">
+                    <div>
+                        <h3>profile picture</h3>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="user_pic" src="../img/user.png" alt="">
+                        </div>
+                        <input type="file" name="" id="">
+                    </div>
+                </div>
+                <div class="user_box">
+                    <div>
+                        <h2>User Summary</h2>
+                    </div>
+                    <div>
+                        <h3>Account Type</h3>
+                    </div>
+                    <div>
+                        <h3>Username</h3>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                    </div>
+                    <div>
+                        <h3>Full Name</h3>
+                    </div>
+                    <div>
+                        <h3>Gender</h3>
+                    </div>
+                    <div>
+                        <h3>Date of Birth </h3>
+                    </div>
+                    <div>
+                        <h3>Join Date</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bot_main_container">
+            <div class="bot_fist_sub_container">
+                <h1 class="text_color">About us :</h1>
+                <p class="about_us_text">
+                    <span class="about_us_text_span text_color">
+                    Having great thinks to your self is not the nice move to do, and so we decided to create a new platform that can provide for people the right education that they want in oder to achieve the learning curve in witch they can sustain a certain skill to improve in there job or start from scratch in any field,
+                    for a better world every one of us should have to learn for free what he want to do in life, no matter where you live or how you live you just need a pc, a phone, anythink that can provide you with internet access. <br>
+                    Many great minds out there not having the opornity to devlope there skills in oder to achieve great things, and for that i want to give you every things in your hands to be better in life, one time a really super nice guys said : "Learning never exhausts the mind". <br>
+                    Happy learning every one hope we change the world in a better way maybe not for us but for future generation.</span>
+                </p>
+            </div>
+            <div class="bot_second_sub_container">
+                <h1 class="text_color">Our social Media :</h1>
+                <div class="container_social">
+                    <a class="social_link" href=""><img class="img_social" src="../img/facebook.png" alt="facebook"> Facebook</a>
+                    <a class="social_link" href=""><img class="img_social" src="../img/twitter.png" alt="twitter"> Twitter</a>
+                    <a class="social_link" href=""><img class="img_social" src="../img/instagram.png" alt="instagram">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script>
+    const menuToggle = document.querySelector('.menuToggle')
+    const navigation = document.querySelector('.navigation')
+    menuToggle.onclick = ()=>{
+        navigation.classList.toggle('active')
+    }
+</script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../mainjs.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</html>

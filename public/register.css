@@ -1,0 +1,44 @@
+.container_log{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 60%;
+    align-items: center;
+    border: solid 1px #333333;
+    border-radius: 15px;
+}
+.container_text{
+    display: flex;
+    height: 80%;
+    width: 30%;
+}
+.input_box{
+    text-align: center;
+    border: #EE4E34 solid 1px;
+    border-radius: 7px;
+    height: 30px;
+    width: 80%;
+}
+.div_register{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.btn_register{
+    height: 30px;
+    width: 120px;
+    font-size: 17px;
+    background-color: #EE4E34;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+.btn_register:hover{
+    background-color: #FA6166;
+    border: #333333 1px solid;
+    cursor: pointer;
+}
