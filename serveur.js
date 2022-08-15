@@ -12,7 +12,7 @@ const session = require('express-session')
 const Users = require('./models/Users');
 // connection to mongodb cloud database 
 // user database
-mongoose.connect('mongodb+srv://zizouman:wizgame123@cluster0.lcivg.mongodb.net/?retryWrites=true&w=majority' ,()=>{
+mongoose.connect('mongodb+srv://...@cluster0.lcivg.mongodb.net/?retryWrites=true&w=majority' ,()=>{
     console.log('dabatabe conected')
 },
 e => console.error(e)
